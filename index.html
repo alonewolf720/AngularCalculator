@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Calculator</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="CalcApp" ng-controller="CalcCtrl">
+  <h1><span class="angularC">Angular</span> calculator</h1>
+  <h3>Demo version<a href="https://github.com/alonewolf720/angularCalculator" target="blank"> Github</a></h3>
+<div class="calcbady">
+  <div class="barCalc">
+    <span ng-click='clear()' class="clean">C</span>
+    <input type="text" value="{{num1}} {{operator}} {{num2}}"/>
+  </div>
+
+  <div class="row_one">
+    <button ng-click="setNum(7)" value="7">7</button>
+    <button ng-click="setNum(8)" value="8">8</button>
+    <button ng-click="setNum(9)" value="9">9</button>
+    <button ng-click="setOperator('/')" class="setOperator" value="/">÷</button>
+  </div>
+
+  <div class="row_two">
+    <button ng-click="setNum(4)" value="1">4</button>
+    <button ng-click="setNum(5)" value="1">5</button>
+    <button ng-click="setNum(6)" value="1">6</button>
+    <button ng-click="setOperator('x')" class="setOperator" value="*">x</button>
+  </div>
+
+  <div class="row_three">
+    <button ng-click="setNum(1)" value="1">1</button>
+    <button ng-click="setNum(2)" value="2">2</button>
+    <button ng-click="setNum(3)" value="3">3</button>
+    <button ng-click="setOperator('-')" class="setOperator" value="-">-</button>
+  </div>
+
+  <div class="row_four">
+    <button ng-click="setNum(0)" value="0">0</button>
+    <button ng-click="setNum('.')" value=",">,</button>
+    <button ng-click="compute()" class="result" value="=">=</button>
+    <button ng-click="setOperator('+')" class="setOperator" value="+">+</button>
+  </div>
+</div>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

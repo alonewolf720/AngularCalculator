@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:#5BD086
+}
+
+body{
+  background: #2C363F;
+} 
+h1{text-align: center; color:white;
+position:relative; top:30px;}
+h3{text-align: center; color:white;
+position:relative; top:30px;}
+.angularC{color:#F3677C;}
+.calcbady{
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.barCalc, 
+.row_one, 
+.row_two, 
+.row_three, 
+.row_four{
+  display: flex;
+}
+.result{
+  background: #E2E8EE;
+}
+
+input{
+  width: 100%;
+  height: 80px;
+  text-align: right;
+  background: #1a1a1a;
+  font-size: 40px;
+  color: white;
+  padding-right: 3%;
+}
+
+button{
+  background: #F5F5F5;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+  font-size: 17px;
+  color: #4A4A4B;
+  border: 1px solid #E7EBEC;
+  transition: background 0.01s;
+}
+button:hover{
+  background: #DBE5E9;
+  border: 1px solid #DBE5E9;
+  color:white;
+}
+.setOperator{background: #E7EBEC;}
+.clean{
+  width:20px;
+  height: 55px;
+  border:white;
+  heigth:inherit;
+  background: #1a1a1a;
+  cursor:pointer;
+  font-size:40px;
+  color:white;
+  padding: 13px;
+  font-family:arial;
+}
+.clean:hover{color: #F05656;}
